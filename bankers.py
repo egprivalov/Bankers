@@ -9,6 +9,9 @@ while key == 0:
     if money_in>9999:
         print("Слишком большое число. Введите поменьше. ")
         key=0
+    if money_in<0:
+        print("Число должно быть положительным.")
+        key=0
 money_out=""
 thous=money_in // 1000
 hundr=money_in % 1000 // 100
